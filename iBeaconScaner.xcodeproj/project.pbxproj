@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D67974B82228668600B75221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67974B72228668600B75221 /* AppDelegate.swift */; };
-		D67974BA2228668600B75221 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67974B92228668600B75221 /* ViewController.swift */; };
+		D67974BA2228668600B75221 /* iBeaconVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67974B92228668600B75221 /* iBeaconVC.swift */; };
 		D67974BD2228668600B75221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67974BB2228668600B75221 /* Main.storyboard */; };
 		D67974BF2228668800B75221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67974BE2228668800B75221 /* Assets.xcassets */; };
 		D67974C22228668800B75221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67974C02228668800B75221 /* LaunchScreen.storyboard */; };
+		D67974CE22287B3000B75221 /* iBeaconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67974CD22287B3000B75221 /* iBeaconCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D67974B42228668600B75221 /* iBeaconScaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBeaconScaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67974B72228668600B75221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D67974B92228668600B75221 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D67974B92228668600B75221 /* iBeaconVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconVC.swift; sourceTree = "<group>"; };
 		D67974BC2228668600B75221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D67974BE2228668800B75221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D67974C12228668800B75221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D67974C32228668800B75221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D67974CD22287B3000B75221 /* iBeaconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		D67974B62228668600B75221 /* iBeaconScaner */ = {
 			isa = PBXGroup;
 			children = (
+				D67974CA22287AF700B75221 /* Controller */,
+				D67974C922287AF000B75221 /* View */,
 				D67974B72228668600B75221 /* AppDelegate.swift */,
-				D67974B92228668600B75221 /* ViewController.swift */,
 				D67974BB2228668600B75221 /* Main.storyboard */,
 				D67974BE2228668800B75221 /* Assets.xcassets */,
 				D67974C02228668800B75221 /* LaunchScreen.storyboard */,
 				D67974C32228668800B75221 /* Info.plist */,
 			);
 			path = iBeaconScaner;
+			sourceTree = "<group>";
+		};
+		D67974C922287AF000B75221 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D67974CD22287B3000B75221 /* iBeaconCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D67974CA22287AF700B75221 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D67974B92228668600B75221 /* iBeaconVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D67974BA2228668600B75221 /* ViewController.swift in Sources */,
+				D67974BA2228668600B75221 /* iBeaconVC.swift in Sources */,
 				D67974B82228668600B75221 /* AppDelegate.swift in Sources */,
+				D67974CE22287B3000B75221 /* iBeaconCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
